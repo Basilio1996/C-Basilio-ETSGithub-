@@ -7,9 +7,9 @@ public class MenuHucha {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner (System.in);
 		
-		String menu = "1º añadir dinero: \n "; 
-		menu = menu + "2º Extraer dinero: \n";
-		menu = menu + "3º Salir \n";
+		String menu = "1Âº aÃ±adir dinero: \n "; 
+		menu = menu + "2Âº Extraer dinero: \n";
+		menu = menu + "3Âº Salir \n";
 		Hucha hu = new Hucha();
 		boolean repetir = true;
 		
@@ -20,13 +20,13 @@ public class MenuHucha {
 			int opt = teclado.nextInt();
 			
 			if(opt ==1 ){
-				System.out.println("Indica la cantidad que quieres ingresar: ");
+				System.out.println("Â¿Cuanto dinero quieres ingresar? ");
 				double cantidad = teclado.nextDouble();
-				hu.añadir(cantidad);
+				hu.aÃ±adir(cantidad);
 				
 			}else
 				if(opt==2){
-				System.out.println("¿Qué cantidad quieres retirar?");
+				System.out.println("Â¿QuÃ© cantidad quieres retirar?");
 				double quitar = teclado.nextDouble();
 				hu.sacar(quitar);
 				}else
